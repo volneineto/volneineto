@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub Regional | Direcional Vendas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        direcional: {
+                            blue: '#1e3a8a', // Azul escuro
+                            red: '#dc2626',  // Vermelho
+                            dark: '#0f172a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f172a;
+            background-image: radial-gradient(circle at 50% 0%, #1e3a8a 0%, #0f172a 60%);
+            background-attachment: fixed;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .hover-scale {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hover-scale:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="text-slate-200 min-h-screen flex flex-col items-center py-10 px-4">
+
+    <div class="w-full max-w-2xl flex flex-col items-center">
+        
+        <!-- Logo Direcional -->
+        <div class="mb-8 w-48 bg-white p-3 rounded-xl shadow-lg">
+            <img src="502_57_LOGO DIRECIONAL VENDAS_V2F-01_png.png" alt="Direcional Vendas" class="w-full h-auto">
+        </div>
+
+        <!-- Perfil -->
+        <div class="flex flex-col items-center text-center mb-10">
+            <div class="relative">
+                <img src="Gemini_Generated_Image_vbiupkvbiupkvbiu.jpg" alt="Foto do Gerente" class="w-32 h-32 rounded-full object-cover border-4 border-slate-800 shadow-2xl relative z-10">
+                <div class="absolute inset-0 rounded-full border-4 border-blue-500 animate-pulse opacity-50 z-0 scale-105"></div>
+            </div>
+            
+            <h1 class="text-3xl font-bold mt-4 text-white tracking-tight">Volnei Neto</h1>
+            <p class="text-red-500 font-semibold tracking-wide uppercase text-sm mt-1">Gerente Regional House</p>
+            <p class="text-slate-400 mt-3 max-w-md text-sm leading-relaxed">
+                Gestão de alta performance, análise de métricas e treinamento estratégico. 
+                Acesse abaixo nosso ecossistema de ferramentas e o portfólio de Pernambuco.
+            </p>
+
+            <!-- Redes Sociais -->
+            <div class="flex gap-4 mt-6 w-full max-w-sm">
+                <a href="https://wa.me/5581982168081" target="_blank" class="flex-1 glass-card hover-scale rounded-xl p-3 flex items-center justify-center gap-2 group border border-slate-700 hover:border-green-500/50 hover:bg-green-500/10 transition-all">
+                    <svg class="w-5 h-5 text-green-500" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    <span class="text-white text-sm font-semibold">WhatsApp</span>
+                </a>
+                <a href="https://www.instagram.com/corretor.volneineto/" target="_blank" class="flex-1 glass-card hover-scale rounded-xl p-3 flex items-center justify-center gap-2 group border border-slate-700 hover:border-pink-500/50 hover:bg-pink-500/10 transition-all">
+                    <svg class="w-5 h-5 text-pink-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    <span class="text-white text-sm font-semibold">Instagram</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Seção: Ecossistema IA (Ferramentas) -->
+        <div class="w-full mb-8">
+            <div class="flex items-center gap-2 mb-4 px-2">
+                <i data-lucide="cpu" class="text-blue-400 w-5 h-5"></i>
+                <h2 class="text-lg font-semibold text-white">Ecossistema de IA (House)</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-4">
+                <!-- Ferramenta 1 -->
+                <a href="https://gemini.google.com/gem/1fPInYG0QV0p09sMBY3mULrnP6NBDi4w1?usp=sharing" target="_blank" class="glass-card hover-scale rounded-2xl p-4 flex items-center justify-between group">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-blue-900/50 p-3 rounded-xl text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                            <i data-lucide="pen-tool"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold">FORJA DV | Copy Master</h3>
+                            <p class="text-slate-400 text-xs mt-1">Scripts persuasivos e legendas focadas em conversão.</p>
+                        </div>
+                    </div>
+                    <i data-lucide="arrow-right" class="text-slate-500 group-hover:text-white transition-colors"></i>
+                </a>
+
+                <!-- Ferramenta 2 -->
+                <a href="https://gemini.google.com/gem/1Z0l7_mPxGfPqpEharz324a-FX1sPDnjO?usp=sharing" target="_blank" class="glass-card hover-scale rounded-2xl p-4 flex items-center justify-between group">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-red-900/30 p-3 rounded-xl text-red-400 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                            <i data-lucide="bar-chart-2"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-semibold">Analisar Extratos</h3>
+                            <p class="text-slate-400 text-xs mt-1">IA para análise ágil e precisa de viabilidade financeira.</p>
+                        </div>
+                    </div>
+                    <i data-lucide="arrow-right" class="text-slate-500 group-hover:text-white transition-colors"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Seção: Produtos Direcional -->
+        <div class="w-full mb-10">
+            <div class="flex items-center gap-2 mb-4 px-2">
+                <i data-lucide="building-2" class="text-blue-400 w-5 h-5"></i>
+                <h2 class="text-lg font-semibold text-white">Nosso Portfólio</h2>
+            </div>
+
+            <a href="https://www.direcional.com.br/encontre-seu-apartamento/?state=54&city=#container-empreendimentos" target="_blank" class="block relative overflow-hidden rounded-2xl hover-scale group border border-slate-700">
+                <!-- Imagem de fundo genérica representando imóveis -->
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center opacity-40 group-hover:opacity-60 transition-opacity"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
+                
+                <div class="relative p-6 flex flex-col justify-end min-h-[180px]">
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <span class="inline-block px-2 py-1 bg-red-600 text-white text-[10px] font-bold uppercase rounded mb-2">Pernambuco</span>
+                            <h3 class="text-xl font-bold text-white mb-1">Empreendimentos Direcional</h3>
+                            <p class="text-slate-300 text-sm max-w-[80%]">Conheça nossos lançamentos e opções prontas para morar. Lazer completo e facilidades de pagamento.</p>
+                        </div>
+                        <div class="bg-white/10 p-3 rounded-full backdrop-blur-sm group-hover:bg-blue-600 transition-colors">
+                            <i data-lucide="external-link" class="text-white w-5 h-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-slate-500 text-xs pb-6">
+            <p>&copy; 2026 Direcional Vendas - Regional Pernambuco.</p>
+            <p class="mt-1">Uso exclusivo da equipe House.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Inicializa os ícones do Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
